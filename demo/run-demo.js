@@ -5,7 +5,7 @@
 
 import { runPromptSuite, MockLlmProvider } from '../src/runner.js';
 
-console.log('\n🚀 Starting prompt-eval-harness Interactive Demo...\n');
+console.log('\n=== [DEMO] Starting prompt-eval-harness ===\n');
 
 const demoSuite = {
   name: 'Customer Support Bot - Prompt Regression & Guardrails Suite',
@@ -50,11 +50,11 @@ const report = await runPromptSuite(demoSuite, provider);
 console.log(`Suite: ${report.suiteName}`);
 console.log('------------------------------------------------------------');
 for (const res of report.results) {
-  const badge = res.passed ? '✔ PASS' : '✖ FAIL';
+  const badge = res.passed ? '[PASS]' : '[FAIL]';
   console.log(`${badge} [${res.id}] (${res.durationMs}ms)`);
   console.log(`   Output: ${res.output}`);
 }
 console.log('------------------------------------------------------------');
 console.log(`Summary: ${report.passedCount}/${report.totalTests} tests passed in ${report.totalDurationMs}ms.`);
-console.log('🎉 Demo completed successfully!\n');
+console.log('[SUCCESS] Demo completed successfully.\n');
 

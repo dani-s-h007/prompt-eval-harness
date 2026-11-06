@@ -1,4 +1,4 @@
-# prompt-eval-harness 🧪
+# prompt-eval-harness
 
 [![CI](https://github.com/dani-s-h007/prompt-eval-harness/actions/workflows/ci.yml/badge.svg)](https://github.com/dani-s-h007/prompt-eval-harness/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
@@ -11,7 +11,7 @@ Tuning system prompts, agent instructions, and few-shot templates is fraught wit
 
 ---
 
-## ✨ Features
+## Features
 
 - **Guardrail & Assertion Suite**: Enforces `contains`, `notContains` (forbidden term leaks), `matchesRegex`, `validJson` (with schema key requirements), and token budgets (`maxTokens`).
 - **Zero-Cost Mock Testing**: Includes a built-in mock provider that evaluates your assertions in under 5ms without requiring OpenAI/Anthropic API keys or incurring inference charges in CI.
@@ -21,7 +21,7 @@ Tuning system prompts, agent instructions, and few-shot templates is fraught wit
 
 ---
 
-## 🚀 Installation & Demo
+## Installation & Demo
 
 ```bash
 # Run on-demand with npx
@@ -33,7 +33,7 @@ npm run demo
 
 ---
 
-## 🛠️ CLI Usage
+## CLI Usage
 
 ```bash
 # Run an evaluation suite:
@@ -45,7 +45,7 @@ prompt-eval-harness suite.json --json
 
 ---
 
-## 💻 Programmatic TypeScript API
+## Programmatic TypeScript API
 
 ```typescript
 import { runPromptSuite, MockLlmProvider } from 'prompt-eval-harness';
@@ -72,7 +72,7 @@ console.log(`Passed: ${report.allPassed}`);
 
 ---
 
-## 🧪 Testing
+## Testing
 
 ```bash
 npm test
@@ -80,7 +80,7 @@ npm test
 
 ---
 
-## 📄 License
+## License
 
 MIT © Essentials Toolkit Authors
 

@@ -57,10 +57,10 @@ export async function runCli(argv = process.argv.slice(2)) {
     return 0;
   }
 
-  console.log(`\n🧪 ${report.suiteName}`);
+  console.log(`\n ${report.suiteName}`);
   console.log('============================================================');
   for (const res of report.results) {
-    const badge = res.passed ? '\x1b[32m✔ PASS\x1b[0m' : '\x1b[31m✖ FAIL\x1b[0m';
+    const badge = res.passed ? '\x1b[32m[PASS]\x1b[0m' : '\x1b[31m[FAIL]\x1b[0m';
     console.log(`${badge} ${res.id} (${res.durationMs}ms)`);
     if (!res.passed) {
       for (const fail of res.failures) {
