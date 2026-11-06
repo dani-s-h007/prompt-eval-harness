@@ -1,0 +1,47 @@
+{
+  "name": "prompt-eval-harness",
+  "version": "1.0.0",
+  "description": "Deterministic LLM prompt regression, assertion & guardrails test runner with zero-cost mock providers.",
+  "type": "module",
+  "main": "src/runner.js",
+  "types": "index.d.ts",
+  "bin": {
+    "prompt-eval-harness": "bin/cli.js"
+  },
+  "files": [
+    "src",
+    "bin",
+    "demo",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "demo": "node demo/run-demo.js",
+    "start": "node bin/cli.js"
+  },
+  "keywords": [
+    "llm",
+    "prompt-testing",
+    "prompt-eval",
+    "evals",
+    "ai-safety",
+    "guardrails",
+    "regression-testing",
+    "cli"
+  ],
+  "author": "dani-s-h007 <shanusathar@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dani-s-h007/prompt-eval-harness.git"
+  },
+  "homepage": "https://github.com/dani-s-h007/prompt-eval-harness#readme",
+  "bugs": {
+    "url": "https://github.com/dani-s-h007/prompt-eval-harness/issues"
+  }
+}
